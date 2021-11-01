@@ -1,0 +1,42 @@
+.menu {
+  &__item:not(:last-child) {
+    margin-right: 7rem;
+  }
+}
+
+.assortment {
+  &__product-cards {
+    @include flex-h-sb;
+    flex-wrap: wrap;
+    
+  }
+}
+.filter {
+  & > *:not(:last-child) {
+    margin-right: 5rem;
+  }
+  &__btn svg {
+    margin-left: 1.5rem;
+  }
+}
+.product-card {
+  min-width: 29rem;
+  max-width: 35rem;
+  margin: 0 2rem 2.5rem 0;
+
+  &__content > *:not(:last-child) {
+    margin-bottom: 2.2rem;
+  }
+}
+
+.footer {
+  &__content {
+    margin-right: 8.5rem;
+  }
+}
+
+.form {
+  &__input {
+    margin-right: 1.5rem;
+  }
+}

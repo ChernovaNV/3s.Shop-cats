@@ -1,0 +1,30 @@
+.assortment {
+  padding: 3.5rem 0 8rem;
+  position: relative;
+  &__filter {
+    margin-bottom: 3.5rem;
+  }
+  &__product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem , 1fr));
+    justify-items: space-between;
+    gap: 2.5rem 2rem;
+  }
+
+  &__btn-more {
+    margin: 7rem auto 0;
+    @include flex-all-center;
+    width: 38rem;
+    height: 6.5rem;
+    border: 1px solid $bg-gray;
+    border-radius: 1rem;
+
+    font-size: 1.4rem;
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+    }
+  }
+
+}

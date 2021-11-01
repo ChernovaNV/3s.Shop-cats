@@ -1,0 +1,14 @@
+.header {
+
+  background: linear-gradient(rgba(31, 32, 33, 0.79), rgba(31, 32, 33, 0.79)), url(../img/bg-header.jpg)  center 0/auto 100% no-repeat;
+  height: 25.2rem;
+  padding: 4rem 0;
+
+  color: $txt-white;
+
+  &__top {
+    @include flex-all-sb;
+  }
+}
+
+

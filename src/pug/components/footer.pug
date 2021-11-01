@@ -1,0 +1,14 @@
+footer.footer 
+  .container.footer__inner
+    .footer__content
+      h2.footer__title Успей купить!
+      p.footer__text Подпишись и успей словить все акции
+    form.footer__form.form(action="")
+      .form__first-row
+        input(type="email", placeholder="Email").form__input
+        button(disabled).btn-reset.form__btn Подписаться
+      .form__second-row
+        input(type="checkbox", id="sub-news" tabindex="-1").form__check
+        label(for="sub-news" tabindex="0").form__check-box
+        label(for="sub-news").form__label Подписаться на новости
+

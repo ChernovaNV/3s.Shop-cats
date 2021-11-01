@@ -1,0 +1,25 @@
+.footer {
+  background-color: $bg-black;
+  padding: 9rem 0;
+
+  color: $txt-white;
+  &__inner {
+    @include flex-all-sb;
+    gap: 8.5rem;
+  }
+  &__content {
+    @include flex-h-sb;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin: 0;
+    
+  }
+  &__text {
+    font-size: 2.8rem;
+    max-width: 35rem;
+    margin: 2.5rem 0;
+  }
+}

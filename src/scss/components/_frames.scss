@@ -1,0 +1,63 @@
+@keyframes shrink-bounce {
+  0% { transform: scale(1) }
+
+  33% { transform: scale(0.85) }
+
+  100% { transform: scale(1) }
+}
+
+@keyframes checkbox-check {
+  0% {
+      width: 0;
+      height: 0;
+      border-color: #fff;
+      transform: translate3d(0, 0, 0) rotate(45deg)
+  }
+
+  33% {
+      width: .2rem;
+      height: 0;
+      transform: translate3d(0, 0, 0) rotate(45deg)
+  }
+
+  100% {
+      width: .6rem;
+      height: 1rem;
+      border-color: #fff;
+      transform: translate3d(0, 0, 0) rotate(45deg)
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(250px, 0, 0);
+    display: block;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(250px, 0, 0);
+    display: none;
+  }
+}
+
+@keyframes pounding {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,127 @@
+
+body {
+  &:after {
+    display: none;
+    background: $bg-white;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transition: all .4s ease;
+    width: 100%;
+  }
+
+  &.open {
+    overflow: hidden;
+  }
+
+  &.open:after {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.burger {
+  &__menu {
+    background: transparent;
+    border: transparent solid 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    padding-left: 16px;
+    padding-top: 17px;
+    position: relative;
+    transition: all .4s ease;
+    user-select: none;
+    width: 60px;
+    z-index: 12;
+
+    &:hover,
+    &:focus {
+      border: $accent solid 2px;
+    }
+    &:hover, &:focus { 
+      .burger__bun {
+        background-color: $accent;
+      }
+    }
+  }
+
+  &__bun {
+    background: $bg-white;
+    position: relative;
+    transition: all .4s ease;
+
+    &--top {
+      height: 2px;
+      top: -16px;
+      width: 25px;
+    }
+
+    &--mid {
+      height: 2px;
+      top: -8px;
+      width: 25px;
+    }
+
+    &--bottom {
+      height: 2px;
+      top: 0;
+      width: 25px;
+    }
+  }
+
+  &__brand {
+    color: transparent;
+    font-size: 24px;
+    margin-right: 10px;
+    position: relative;
+    text-decoration: none;
+    top: 0;
+    transition: all .4s ease;
+    z-index: 13;
+  }
+
+  &__container {
+    display: none;
+    height: 60px;
+    right: 30px;
+    position: absolute;
+    top: 30px;
+
+    &.open {
+      &:hover, &:focus { 
+        .burger__bun--top, 
+        .burger__bun--bottom {
+          background-color: $accent;
+        }
+      }
+
+      .burger__bun--top {
+        background: $bg-black;
+        top: -6px;
+        transform: rotate(45deg);
+      }
+
+      .burger__bun--mid {
+        opacity: 0;
+      }
+
+      .burger__bun--bottom {
+        background: $bg-black;
+        top: -10px;
+        transform: rotate(-45deg);
+      }
+
+      .burger__brand {
+        color: $txt-black;
+      }
+    }
+  }
+}
+

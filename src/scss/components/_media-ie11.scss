@@ -1,0 +1,30 @@
+// Media for IE
+
+@media screen and (max-width: 1205px) {
+  .menu {
+    &__item:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+  
+  .assortment {
+    &__product-cards {
+      justify-content: center;
+    }
+  }
+  
+  .form {
+    &__input {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .filter {
+    & > *:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+} 

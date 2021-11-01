@@ -1,0 +1,18 @@
+@import "vars";
+@import "mixins";
+
+@import "./components/header";
+@import "./components/footer";
+@import "components/icons"; 
+@import "components/assortment"; 
+@import "components/product-card"; 
+@import "components/burger-menu"; 
+@import "components/modal"; 
+
+@import "components/media"; 
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+  @import "components/ie11";
+  @import "components/media-ie11";
+
+}

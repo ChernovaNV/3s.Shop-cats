@@ -1,0 +1,16 @@
+.icon {
+  &--logo {
+    width: 7.8rem;
+    height: 5rem;
+    fill: $bg-white;
+  }
+  &--arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $txt-black;
+    vertical-align: middle;
+  }
+  &-arrow--down {
+    transform: rotate(180deg);
+  }
+}

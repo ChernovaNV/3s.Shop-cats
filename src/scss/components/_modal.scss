@@ -1,0 +1,37 @@
+.modal {
+  display: none;
+  transition: translateY 0.4s linear;
+  &__open {
+    display: block;
+  }
+}
+.modal-favorites {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30rem;
+  height: 6rem;
+  background-color: $bg-white;
+  border-radius: 5px;
+  box-shadow: 5px 2px 10px 0px $bg-gray;
+  position: fixed;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  transform: translatey(250px); 
+  
+  .modal__open > & {
+      transform: translatey(0);
+    }
+  
+  
+  &__svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  &__heart {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    fill: $bg-black;
+  }
+}

@@ -1,0 +1,26 @@
+include ../mixins/mixins
+
+block vars 
+  -let title = 'Главная'
+    
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/vendor.css")
+    link(rel="stylesheet", href="css/global.css")
+    link(rel="stylesheet", href="css/main.css")
+    
+    title= title
+  body
+    
+    .site-container
+      include ../components/header
+      block content 
+      include ../components/footer
+
+    script(src="js/main.js" type="text/javascript" defer) 
+    
